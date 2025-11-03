@@ -18,6 +18,9 @@ namespace SharkGameLoop
         static int horizontalPos = 0;
         static int verticalPos = 0;
 
+        static int SharkHorizontalPos = 0;
+        static int SharkVerticalPos = 0;
+
         static int ticksMs = 17;
         static void Main(string[] args)
         {
@@ -58,11 +61,17 @@ namespace SharkGameLoop
         {
             verticalPos += verticalInput;
             horizontalPos += horizontalInput;
+
+            if (SharkHorizontalPos = horizontalPos && SharkVerticalPos = verticalPos)
+            {
+                //
+            }
         }
 
         static void Draw()
         {
-            //
+            Console.SetCursorPosition(0, 0);
+
         }
 
         static void GameOverScreen()
