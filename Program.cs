@@ -64,7 +64,7 @@ namespace SharkGameLoop
 
             if (SharkHorizontalPos = horizontalPos && SharkVerticalPos = verticalPos)
             {
-                //
+                isPlaying = false;
             }
         }
 
@@ -74,6 +74,13 @@ namespace SharkGameLoop
 
         }
 
+        static void MainMenuScreen()
+        {
+            Console.Clear();
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Main Menu");
+        }
         static void GameOverScreen()
         {
             Console.Clear();
